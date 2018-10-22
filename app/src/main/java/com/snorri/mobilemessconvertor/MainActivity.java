@@ -1,3 +1,8 @@
+/*
+Author: Denys Shabelnyk
+Date: 23.10.2018 00:26
+*/
+
 package com.snorri.mobilemessconvertor;
 
 import android.support.v7.app.AppCompatActivity;
