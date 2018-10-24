@@ -5,6 +5,7 @@ Date: 23.10.2018 00:26
 
 package com.snorri.mobilemessconvertor;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -32,7 +33,17 @@ public class MainActivity extends AppCompatActivity {
                 System.exit(0);
             }
         });
-        /**/
+
+
+        // Enter to General Activity
+        Button start_btn = (Button) findViewById(R.id.start_btn);
+        start_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent openGeneralActivity = new Intent(MainActivity.this,General.class);
+                startActivity(openGeneralActivity);
+            }
+        });
 
     }
 
