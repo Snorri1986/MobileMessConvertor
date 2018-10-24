@@ -49,7 +49,7 @@
         android:layout_width="218dp"
         android:layout_height="163dp"
         android:contentDescription="LOGO!"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/c_f_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"

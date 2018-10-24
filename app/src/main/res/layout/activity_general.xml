@@ -2,18 +2,175 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/buttons"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".General">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="153dp"
-        android:layout_height="112dp"
-        android:text="GENERAL"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <Button
+        android:id="@+id/c_f_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="CELC->FAHR"
+        app:layout_constraintBottom_toTopOf="@+id/f_c_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/f_c_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="FAHR->CELC"
+        app:layout_constraintBottom_toTopOf="@+id/kelv_c_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/c_f_btn" />
+
+    <Button
+        android:id="@+id/kelv_c_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="KELVIN->CELC"
+        app:layout_constraintBottom_toTopOf="@+id/lm_km_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/f_c_btn" />
+
+    <Button
+        android:id="@+id/lm_km_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="LandM->KM"
+        app:layout_constraintBottom_toTopOf="@+id/km_lm_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kelv_c_btn" />
+
+    <Button
+        android:id="@+id/km_lm_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="KM->LandM"
+        app:layout_constraintBottom_toTopOf="@+id/km_seam_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lm_km_btn" />
+
+    <Button
+        android:id="@+id/seam_km_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="SeaM->KM"
+        app:layout_constraintBottom_toTopOf="@+id/inch_sm_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/km_seam_btn" />
+
+    <Button
+        android:id="@+id/km_seam_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="KM->SeaM"
+        app:layout_constraintBottom_toTopOf="@+id/seam_km_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/km_lm_btn" />
+
+    <Button
+        android:id="@+id/inch_sm_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="INCH->SM"
+        app:layout_constraintBottom_toTopOf="@+id/sm_inch_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seam_km_btn" />
+
+    <Button
+        android:id="@+id/sm_inch_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="SM->INCH"
+        app:layout_constraintBottom_toTopOf="@+id/fut_m_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inch_sm_btn" />
+
+    <Button
+        android:id="@+id/fut_m_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="FUT->M"
+        app:layout_constraintBottom_toTopOf="@+id/m_fut_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sm_inch_btn" />
+
+    <Button
+        android:id="@+id/m_fut_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="M->FUT"
+        app:layout_constraintBottom_toTopOf="@+id/gal_lit_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fut_m_btn" />
+
+    <Button
+        android:id="@+id/gal_lit_btn"
+        android:layout_width="97dp"
+        android:layout_height="40dp"
+        android:text="GAL->LITR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lit_gal_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/m_fut_btn" />
+
+    <Button
+        android:id="@+id/lit_gal_btn"
+        android:layout_width="94dp"
+        android:layout_height="40dp"
+        android:text="LITR->GAL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/yard_met_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/gal_lit_btn"
+        app:layout_constraintTop_toBottomOf="@+id/m_fut_btn" />
+
+    <Button
+        android:id="@+id/yard_met_btn"
+        android:layout_width="96dp"
+        android:layout_height="40dp"
+        android:text="YARD->M"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/met_yard_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/lit_gal_btn"
+        app:layout_constraintTop_toBottomOf="@+id/m_fut_btn" />
+
+    <Button
+        android:id="@+id/met_yard_btn"
+        android:layout_width="89dp"
+        android:layout_height="39dp"
+        android:text="M->YARD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/yard_met_btn"
+        app:layout_constraintTop_toBottomOf="@+id/m_fut_btn" />
+
+
 </android.support.constraint.ConstraintLayout>
