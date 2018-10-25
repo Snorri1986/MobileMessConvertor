@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">MobileMessConvertor</string>
+    <string name="cf">CELC->FAHR</string>
+    <string name="fc">FAHR->CELC</string>
+    <string name="kelvcelc">KELVIN->CELC</string>
+    <string name="landmkm">LANDM->KM</string>
+    <string name="kmlandm">KM->LANDM</string>
+    <string name="seamkm">SEAM->KM</string>
+    <string name="kmseam">KM->SEAM</string>
+    <string name="inchsm">INCH->SM</string>
+    <string name="sminch">SM->INCH</string>
+    <string name="futm">FUT->M</string>
+    <string name="mfut">M->FUT</string>
+    <string name="gallitr">GAL->LITR</string>
+    <string name="litrgal">LITR->GAL</string>
+    <string name="yardm">YARD->M</string>
+    <string name="myard">M-YARD</string>
+    <string name="test_text_view">TEST</string>
 </resources>

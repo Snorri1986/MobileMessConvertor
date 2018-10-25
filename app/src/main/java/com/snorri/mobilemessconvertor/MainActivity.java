@@ -15,9 +15,9 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     // Used to load the 'native-lib' library on application startup.
-    static {
+    /*static {
         System.loadLibrary("native-lib");
-    }
+    }*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Close application
-        Button ext_button = (Button) findViewById(R.id.close_btn);
+        Button ext_button = findViewById(R.id.close_btn);
         ext_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         // Enter to General Activity
-        Button start_btn = (Button) findViewById(R.id.start_btn);
+        Button start_btn = findViewById(R.id.start_btn);
         start_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    /**
+    /*
      * A native method that is implemented by the 'native-lib' native library,
      * which is packaged with this application.
      */
