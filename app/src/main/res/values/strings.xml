@@ -20,4 +20,7 @@
     <string name="str_button">START</string>
     <string name="ext_button">EXIT</string>
     <string name="logo">LOGO!</string>
+    <string name="go">CONVERT</string>
+    <string name="trash">CLEAR</string>
+    <string name="back">BACK</string>
 </resources>
