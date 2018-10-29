@@ -38,14 +38,26 @@ public class Worker extends AppCompatActivity {
         });
 
         // Convert button
+        Button btn_convert = findViewById(R.id.convert_btn);
+        btn_convert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // test
+                String filled_text;
+                EditText field_txt = findViewById(R.id.value);
+                filled_text = field_txt.getText().toString();
+                showConvertedResult(filled_text);
+                /**/
+            }
+        });
         /**/
 
         // call core method(test)
-         showConvertedResult();
+        // showConvertedResult();
 
         }
 
-        void showConvertedResult() {
+        void showConvertedResult(String show_val) {
         //test code
         String externalText = getIntent().getStringExtra("BUTTON_MARKER");
 
@@ -53,7 +65,7 @@ public class Worker extends AppCompatActivity {
         switch (externalText) {
             case "CF": {
                 TextView test_text = findViewById(R.id.test_text_view);
-                test_text.setText(externalText);
+                test_text.setText(show_val); // test
                 break;
             }
 

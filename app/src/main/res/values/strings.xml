@@ -15,7 +15,7 @@
     <string name="litrgal">LITR->GAL</string>
     <string name="yardm">YARD->M</string>
     <string name="myard">M-YARD</string>
-    <string name="test_text_view">TEST</string>
+    <string name="test_text_view">NULL</string>
     <string name="title">Mobile Messerment Convertor</string>
     <string name="str_button">START</string>
     <string name="ext_button">EXIT</string>
@@ -23,4 +23,5 @@
     <string name="go">CONVERT</string>
     <string name="trash">CLEAR</string>
     <string name="back">BACK</string>
+    <string name="res_field">RESULT:</string>
 </resources>
