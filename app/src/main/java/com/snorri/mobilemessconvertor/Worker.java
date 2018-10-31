@@ -100,74 +100,122 @@ public class Worker extends AppCompatActivity {
             }
 
             case "LMKM": {
+                // test code
+                double val = Double.parseDouble(show_val); // test
+                val = my_native.landMiletoKm(val); // test
                 TextView test_text = findViewById(R.id.test_text_view);
-                test_text.setText(externalText);
+                //test_text.setText(externalText);
+                test_text.setText(String.valueOf(val)); // test
                 break;
             }
 
             case "KMLM": {
+                // test code
+                double val = Double.parseDouble(show_val); // test
+                val = my_native.kmToLandMile(val); // test
                 TextView test_text = findViewById(R.id.test_text_view);
-                test_text.setText(externalText);
+                //test_text.setText(externalText);
+                test_text.setText(String.valueOf(val)); // test
                 break;
             }
 
             case "KMSM": {
+                // test code
+                double val = Double.parseDouble(show_val); // test
+                val = my_native.kmToSeaMiles(val); // test
                 TextView test_text = findViewById(R.id.test_text_view);
-                test_text.setText(externalText);
+                //test_text.setText(externalText);
+                test_text.setText(String.valueOf(val)); // test
                 break;
             }
 
             case "SMKM": {
+                // test code
+                double val = Double.parseDouble(show_val); // test
+                val = my_native.seaMilestoKm(val); // test
                 TextView test_text = findViewById(R.id.test_text_view);
-                test_text.setText(externalText);
+                //test_text.setText(externalText);
+                test_text.setText(String.valueOf(val)); // test
                 break;
             }
 
             case "INCHSM": {
+                // test code
+                double val = Double.parseDouble(show_val); // test
+                val = my_native.inchToSm(val); // test
                 TextView test_text = findViewById(R.id.test_text_view);
-                test_text.setText(externalText);
+                //test_text.setText(externalText);
+                test_text.setText(String.valueOf(val)); // test
                 break;
             }
 
             case "SMINCH": {
+                // test code
+                double val = Double.parseDouble(show_val); // test
+                val = my_native.smToInch(val); // test
                 TextView test_text = findViewById(R.id.test_text_view);
-                test_text.setText(externalText);
+                //test_text.setText(externalText);
+                test_text.setText(String.valueOf(val)); // test
                 break;
             }
 
             case "FUTM": {
+                // test code
+                double val = Double.parseDouble(show_val); // test
+                val = my_native.ftToMeter(val); // test
                 TextView test_text = findViewById(R.id.test_text_view);
-                test_text.setText(externalText);
+                //test_text.setText(externalText);
+                test_text.setText(String.valueOf(val)); // test
                 break;
             }
 
             case "MFUT": {
+                // test code
+                double val = Double.parseDouble(show_val); // test
+                val = my_native.meterToFt(val); // test
                 TextView test_text = findViewById(R.id.test_text_view);
-                test_text.setText(externalText);
+                //test_text.setText(externalText);
+                test_text.setText(String.valueOf(val)); // test
                 break;
             }
 
             case "GALLITR": {
+                // test code
+                double val = Double.parseDouble(show_val); // test
+                val = my_native.gallToLitr(val); // test
                 TextView test_text = findViewById(R.id.test_text_view);
-                test_text.setText(externalText);
+                //test_text.setText(externalText);
+                test_text.setText(String.valueOf(val)); // test
                 break;
             }
 
             case "LITRGAL": {
+                // test code
+                double val = Double.parseDouble(show_val); // test
+                val = my_native.litrToGall(val); // test
                 TextView test_text = findViewById(R.id.test_text_view);
-                test_text.setText(externalText);
+                //test_text.setText(externalText);
+                test_text.setText(String.valueOf(val)); // test
                 break;
             }
 
             case "YARDM": {
+                // test code
+                double val = Double.parseDouble(show_val); // test
+                val = my_native.yardToMeter(val); // test
                 TextView test_text = findViewById(R.id.test_text_view);
-                test_text.setText(externalText);
+                //test_text.setText(externalText);
+                test_text.setText(String.valueOf(val)); // test
                 break;
             }
 
             case "MYARD": {
+                // test code
+                double val = Double.parseDouble(show_val); // test
+                val = my_native.meterToYard(val); // test
                 TextView test_text = findViewById(R.id.test_text_view);
-                test_text.setText(externalText);
+                //test_text.setText(externalText);
+                test_text.setText(String.valueOf(val)); // test
                 break;
             }
         }
