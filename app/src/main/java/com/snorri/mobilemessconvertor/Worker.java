@@ -58,26 +58,44 @@ public class Worker extends AppCompatActivity {
         }
 
         void showConvertedResult(String show_val) {
+        // test c++ object
+            MyCpp my_native = new MyCpp();
+
         //test code
         String externalText = getIntent().getStringExtra("BUTTON_MARKER");
 
         // Replace test code on C++ method calling
         switch (externalText) {
+            // test c++
             case "CF": {
+                // test code
+                double val = Double.parseDouble(show_val); // test
+                val = my_native.showFaringeith(val); // test
                 TextView test_text = findViewById(R.id.test_text_view);
-                test_text.setText(show_val); // test
+                //test_text.setText(show_val); // test
+                test_text.setText(String.valueOf(val)); // test
                 break;
             }
 
+            // test c++
             case "FC": {
+                // test code
+                double val = Double.parseDouble(show_val); // test
+                val = my_native.showCelcius(val); // test
                 TextView test_text = findViewById(R.id.test_text_view);
-                test_text.setText(externalText);
+                //test_text.setText(externalText);
+                test_text.setText(String.valueOf(val)); // test
                 break;
             }
 
+            // test c++
             case "KC": {
+                // test code
+                double val = Double.parseDouble(show_val); // test
+                val = my_native.showCelciusFromKelvin(val); // test
                 TextView test_text = findViewById(R.id.test_text_view);
-                test_text.setText(externalText);
+                //test_text.setText(externalText);
+                test_text.setText(String.valueOf(val)); // test
                 break;
             }
 
