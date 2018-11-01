@@ -42,180 +42,156 @@ public class Worker extends AppCompatActivity {
         btn_convert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // test
                 String filled_text;
                 EditText field_txt = findViewById(R.id.value);
                 filled_text = field_txt.getText().toString();
                 showConvertedResult(filled_text);
-                /**/
+
             }
         });
-        /**/
-
-        // call core method(test)
-        // showConvertedResult();
 
         }
 
         void showConvertedResult(String show_val) {
-        // test c++ object
-            MyCpp my_native = new MyCpp();
 
-        //test code
+        MyCpp my_native = new MyCpp();
+
+
         String externalText = getIntent().getStringExtra("BUTTON_MARKER");
 
-        // Replace test code on C++ method calling
         switch (externalText) {
-            // test c++
             case "CF": {
-                // test code
-                double val = Double.parseDouble(show_val); // test
-                val = my_native.showFaringeith(val); // test
-                TextView test_text = findViewById(R.id.test_text_view);
-                //test_text.setText(show_val); // test
-                test_text.setText(String.valueOf(val)); // test
+                double val = Double.parseDouble(show_val);
+                val = my_native.showFaringeith(val);
+                TextView inFahrenheit = findViewById(R.id.tv);
+                String res_value = String.valueOf(val) + getString(R.string.fahrenheit);
+                inFahrenheit.setText(res_value);
                 break;
             }
 
-            // test c++
             case "FC": {
-                // test code
-                double val = Double.parseDouble(show_val); // test
-                val = my_native.showCelcius(val); // test
-                TextView test_text = findViewById(R.id.test_text_view);
-                //test_text.setText(externalText);
-                test_text.setText(String.valueOf(val)); // test
+                double val = Double.parseDouble(show_val);
+                val = my_native.showCelcius(val);
+                TextView inCelcius = findViewById(R.id.tv);
+                String res_value = String.valueOf(val) + getString(R.string.celcius);
+                inCelcius.setText(res_value);
                 break;
             }
 
-            // test c++
             case "KC": {
-                // test code
-                double val = Double.parseDouble(show_val); // test
-                val = my_native.showCelciusFromKelvin(val); // test
-                TextView test_text = findViewById(R.id.test_text_view);
-                //test_text.setText(externalText);
-                test_text.setText(String.valueOf(val)); // test
+                double val = Double.parseDouble(show_val);
+                val = my_native.showCelciusFromKelvin(val);
+                TextView inCelciusfromKelvin = findViewById(R.id.tv);
+                String res_value = String.valueOf(val) + getString(R.string.celcius);
+                inCelciusfromKelvin.setText(res_value);
                 break;
             }
 
             case "LMKM": {
-                // test code
-                double val = Double.parseDouble(show_val); // test
-                val = my_native.landMiletoKm(val); // test
-                TextView test_text = findViewById(R.id.test_text_view);
-                //test_text.setText(externalText);
-                test_text.setText(String.valueOf(val)); // test
+                double val = Double.parseDouble(show_val);
+                val = my_native.landMiletoKm(val);
+                TextView inKm = findViewById(R.id.tv);
+                String res_value = String.valueOf(val) + getString(R.string.kilometer);
+                inKm.setText(res_value);
                 break;
             }
 
             case "KMLM": {
-                // test code
-                double val = Double.parseDouble(show_val); // test
-                val = my_native.kmToLandMile(val); // test
-                TextView test_text = findViewById(R.id.test_text_view);
-                //test_text.setText(externalText);
-                test_text.setText(String.valueOf(val)); // test
+                double val = Double.parseDouble(show_val);
+                val = my_native.kmToLandMile(val);
+                TextView inLm = findViewById(R.id.tv);
+                String res_value = String.valueOf(val) + getString(R.string.landmile);
+                inLm.setText(res_value);
                 break;
             }
 
             case "KMSM": {
-                // test code
-                double val = Double.parseDouble(show_val); // test
-                val = my_native.kmToSeaMiles(val); // test
-                TextView test_text = findViewById(R.id.test_text_view);
-                //test_text.setText(externalText);
-                test_text.setText(String.valueOf(val)); // test
+                double val = Double.parseDouble(show_val);
+                val = my_native.kmToSeaMiles(val);
+                TextView inSm = findViewById(R.id.tv);
+                String res_value = String.valueOf(val) + getString(R.string.seamile);
+                inSm.setText(res_value);
                 break;
             }
 
             case "SMKM": {
-                // test code
-                double val = Double.parseDouble(show_val); // test
-                val = my_native.seaMilestoKm(val); // test
-                TextView test_text = findViewById(R.id.test_text_view);
-                //test_text.setText(externalText);
-                test_text.setText(String.valueOf(val)); // test
+                double val = Double.parseDouble(show_val);
+                val = my_native.seaMilestoKm(val);
+                TextView inKmfromSm = findViewById(R.id.tv);
+                String res_value = String.valueOf(val) + getString(R.string.kilometer);
+                inKmfromSm.setText(res_value);
                 break;
             }
 
             case "INCHSM": {
-                // test code
-                double val = Double.parseDouble(show_val); // test
-                val = my_native.inchToSm(val); // test
-                TextView test_text = findViewById(R.id.test_text_view);
-                //test_text.setText(externalText);
-                test_text.setText(String.valueOf(val)); // test
+                double val = Double.parseDouble(show_val);
+                val = my_native.inchToSm(val);
+                TextView inSantimeter = findViewById(R.id.tv);
+                String res_value = String.valueOf(val) + getString(R.string.santim);
+                inSantimeter.setText(res_value);
                 break;
             }
 
             case "SMINCH": {
-                // test code
-                double val = Double.parseDouble(show_val); // test
-                val = my_native.smToInch(val); // test
-                TextView test_text = findViewById(R.id.test_text_view);
-                //test_text.setText(externalText);
-                test_text.setText(String.valueOf(val)); // test
+                double val = Double.parseDouble(show_val);
+                val = my_native.smToInch(val);
+                TextView inInch = findViewById(R.id.tv);
+                String res_value = String.valueOf(val) + getString(R.string.inch);
+                inInch.setText(res_value);
                 break;
             }
 
             case "FUTM": {
-                // test code
-                double val = Double.parseDouble(show_val); // test
-                val = my_native.ftToMeter(val); // test
-                TextView test_text = findViewById(R.id.test_text_view);
-                //test_text.setText(externalText);
-                test_text.setText(String.valueOf(val)); // test
+                double val = Double.parseDouble(show_val);
+                val = my_native.ftToMeter(val);
+                TextView inM = findViewById(R.id.tv);
+                String res_value = String.valueOf(val) + getString(R.string.meter);
+                inM.setText(res_value);
                 break;
             }
 
             case "MFUT": {
-                // test code
-                double val = Double.parseDouble(show_val); // test
-                val = my_native.meterToFt(val); // test
-                TextView test_text = findViewById(R.id.test_text_view);
-                //test_text.setText(externalText);
-                test_text.setText(String.valueOf(val)); // test
+                double val = Double.parseDouble(show_val);
+                val = my_native.meterToFt(val);
+                TextView inFuts = findViewById(R.id.tv);
+                String res_value = String.valueOf(val) + getString(R.string.fut);
+                inFuts.setText(res_value);
                 break;
             }
 
             case "GALLITR": {
-                // test code
-                double val = Double.parseDouble(show_val); // test
-                val = my_native.gallToLitr(val); // test
-                TextView test_text = findViewById(R.id.test_text_view);
-                //test_text.setText(externalText);
-                test_text.setText(String.valueOf(val)); // test
+                double val = Double.parseDouble(show_val);
+                val = my_native.gallToLitr(val);
+                TextView inLiters = findViewById(R.id.tv);
+                String res_value = String.valueOf(val) + getString(R.string.litr);
+                inLiters.setText(res_value);
                 break;
             }
 
             case "LITRGAL": {
-                // test code
-                double val = Double.parseDouble(show_val); // test
-                val = my_native.litrToGall(val); // test
-                TextView test_text = findViewById(R.id.test_text_view);
-                //test_text.setText(externalText);
-                test_text.setText(String.valueOf(val)); // test
+                double val = Double.parseDouble(show_val);
+                val = my_native.litrToGall(val);
+                TextView inGallons = findViewById(R.id.tv);
+                String res_value = String.valueOf(val) + getString(R.string.gal);
+                inGallons.setText(res_value);
                 break;
             }
 
             case "YARDM": {
-                // test code
-                double val = Double.parseDouble(show_val); // test
-                val = my_native.yardToMeter(val); // test
-                TextView test_text = findViewById(R.id.test_text_view);
-                //test_text.setText(externalText);
-                test_text.setText(String.valueOf(val)); // test
+                double val = Double.parseDouble(show_val);
+                val = my_native.yardToMeter(val);
+                TextView inMetersfromYards = findViewById(R.id.tv);
+                String res_value = String.valueOf(val) + getString(R.string.meter);
+                inMetersfromYards.setText(res_value);
                 break;
             }
 
             case "MYARD": {
-                // test code
-                double val = Double.parseDouble(show_val); // test
-                val = my_native.meterToYard(val); // test
-                TextView test_text = findViewById(R.id.test_text_view);
-                //test_text.setText(externalText);
-                test_text.setText(String.valueOf(val)); // test
+                double val = Double.parseDouble(show_val);
+                val = my_native.meterToYard(val);
+                TextView inYards = findViewById(R.id.tv);
+                String res_value = String.valueOf(val) + getString(R.string.yard);
+                inYards.setText(res_value);
                 break;
             }
         }

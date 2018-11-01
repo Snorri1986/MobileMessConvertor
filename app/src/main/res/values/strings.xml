@@ -15,7 +15,7 @@
     <string name="litrgal">LITR->GAL</string>
     <string name="yardm">YARD->M</string>
     <string name="myard">M-YARD</string>
-    <string name="test_text_view">NULL</string>
+    <string name="defaultView">NULL</string>
     <string name="title">Mobile Messerment Convertor</string>
     <string name="str_button">START</string>
     <string name="ext_button">EXIT</string>
@@ -24,4 +24,16 @@
     <string name="trash">CLEAR</string>
     <string name="back">BACK</string>
     <string name="res_field">RESULT:</string>
+    <string name="fahrenheit">F</string>
+    <string name="celcius">C</string>
+    <string name="kilometer">KM</string>
+    <string name="landmile">LandMiles</string>
+    <string name="seamile">SeaMiles</string>
+    <string name="santim">Santimeters</string>
+    <string name="inch">Inches</string>
+    <string name="meter">Meters</string>
+    <string name="fut">Futs</string>
+    <string name="litr">Liters</string>
+    <string name="gal">Gallons</string>
+    <string name="yard">Yards</string>
 </resources>

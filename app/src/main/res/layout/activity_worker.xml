@@ -7,11 +7,11 @@
     tools:context=".Worker">
 
     <TextView
-        android:id="@+id/test_text_view"
+        android:id="@+id/tv"
         android:layout_width="125dp"
         android:layout_height="38dp"
         android:layout_marginEnd="32dp"
-        android:text="@string/test_text_view"
+        android:text="@string/defaultView"
         app:layout_constraintBottom_toTopOf="@+id/value"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -29,7 +29,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/test_text_view" />
+        app:layout_constraintTop_toBottomOf="@+id/tv" />
 
     <Button
         android:id="@+id/convert_btn"
@@ -70,7 +70,7 @@
         android:layout_height="40dp"
         android:text="@string/res_field"
         app:layout_constraintBottom_toTopOf="@+id/value"
-        app:layout_constraintEnd_toStartOf="@+id/test_text_view"
+        app:layout_constraintEnd_toStartOf="@+id/tv"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
