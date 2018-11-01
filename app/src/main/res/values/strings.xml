@@ -36,4 +36,5 @@
     <string name="litr">Liters</string>
     <string name="gal">Gallons</string>
     <string name="yard">Yards</string>
+    <string name="defaultTip">NULL</string>
 </resources>

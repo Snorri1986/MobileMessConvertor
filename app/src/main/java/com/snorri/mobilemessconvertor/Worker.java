@@ -50,7 +50,127 @@ public class Worker extends AppCompatActivity {
             }
         });
 
+        // Exit button
+        Button btn_exit_from_WA = findViewById(R.id.exitapp);
+        btn_exit_from_WA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+                System.exit(0);
+            }
+        });
+
+        // Show tips
+        String externalText_tips = getIntent().getStringExtra("BUTTON_MARKER");
+        switch(externalText_tips) {
+            case "CF" : {
+                String tip = "Conversion from Celsius to Fahrenheit";
+                TextView tip_field = findViewById(R.id.help);
+                tip_field.setText(tip);
+                break;
+            }
+
+            case "FC" : {
+                String tip = "Conversion from Fahrenheit to Celcius";
+                TextView tip_field = findViewById(R.id.help);
+                tip_field.setText(tip);
+                break;
+            }
+
+            case "KC" : {
+                String tip = "Conversion from Kelvin to Celcius";
+                TextView tip_field = findViewById(R.id.help);
+                tip_field.setText(tip);
+                break;
+            }
+
+            case "LMKM": {
+                String tip = "Conversion from LandMile to Kilometer";
+                TextView tip_field = findViewById(R.id.help);
+                tip_field.setText(tip);
+                break;
+            }
+
+            case "KMLM": {
+                String tip = "Conversion from Kilometer to LandMile";
+                TextView tip_field = findViewById(R.id.help);
+                tip_field.setText(tip);
+                break;
+            }
+
+            case "KMSM": {
+                String tip = "Conversion from Kilometer to SeaMile";
+                TextView tip_field = findViewById(R.id.help);
+                tip_field.setText(tip);
+                break;
+            }
+
+            case "SMKM": {
+                String tip = "Conversion from SeaMile to Kilometer";
+                TextView tip_field = findViewById(R.id.help);
+                tip_field.setText(tip);
+                break;
+            }
+
+            case "INCHSM": {
+                String tip = "Conversion from Inches to Santimeter";
+                TextView tip_field = findViewById(R.id.help);
+                tip_field.setText(tip);
+                break;
+            }
+
+            case "SMINCH": {
+                String tip = "Conversion from Santimeter to Inches";
+                TextView tip_field = findViewById(R.id.help);
+                tip_field.setText(tip);
+                break;
+            }
+
+            case "FUTM": {
+                String tip = "Conversion from Futs to Meters";
+                TextView tip_field = findViewById(R.id.help);
+                tip_field.setText(tip);
+                break;
+            }
+
+            case "MFUT": {
+                String tip = "Conversion from Meters to Futs";
+                TextView tip_field = findViewById(R.id.help);
+                tip_field.setText(tip);
+                break;
+            }
+
+            case "GALLITR": {
+                String tip = "Conversion from Gallons to Litters";
+                TextView tip_field = findViewById(R.id.help);
+                tip_field.setText(tip);
+                break;
+            }
+
+            case "LITRGAL": {
+                String tip = "Conversion from Litters to Gallons";
+                TextView tip_field = findViewById(R.id.help);
+                tip_field.setText(tip);
+                break;
+            }
+
+            case "YARDM": {
+                String tip = "Conversion from Yards to Meters";
+                TextView tip_field = findViewById(R.id.help);
+                tip_field.setText(tip);
+                break;
+            }
+
+            case "MYARD": {
+                String tip = "Conversion from Meters to Yards";
+                TextView tip_field = findViewById(R.id.help);
+                tip_field.setText(tip);
+                break;
+            }
+
         }
+        /**/
+    }
 
         void showConvertedResult(String show_val) {
 
