@@ -55,9 +55,11 @@ public class Worker extends AppCompatActivity {
         btn_exit_from_WA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                finish();
-                System.exit(0);
-            }
+                Intent back_to_main_act = new Intent(Worker.this,MainActivity.class);
+                back_to_main_act.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                back_to_main_act.putExtra("EXIT",true);
+                startActivity(back_to_main_act);
+                }
         });
 
         // Show tips
