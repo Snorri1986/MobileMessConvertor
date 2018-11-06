@@ -182,6 +182,7 @@ public class Worker extends AppCompatActivity {
         String externalText = getIntent().getStringExtra("BUTTON_MARKER");
 
         switch (externalText) {
+            // manual test successful
             case "CF": {
                 double val = Double.parseDouble(show_val);
                 val = my_native.showFaringeith(val);
@@ -191,6 +192,7 @@ public class Worker extends AppCompatActivity {
                 break;
             }
 
+            // manual test successful
             case "FC": {
                 double val = Double.parseDouble(show_val);
                 val = my_native.showCelcius(val);
@@ -200,6 +202,7 @@ public class Worker extends AppCompatActivity {
                 break;
             }
 
+            // manual test successful
             case "KC": {
                 double val = Double.parseDouble(show_val);
                 val = my_native.showCelciusFromKelvin(val);
@@ -209,6 +212,7 @@ public class Worker extends AppCompatActivity {
                 break;
             }
 
+            // manual test successful
             case "LMKM": {
                 double val = Double.parseDouble(show_val);
                 val = my_native.landMiletoKm(val);
@@ -218,6 +222,7 @@ public class Worker extends AppCompatActivity {
                 break;
             }
 
+            // manual test successful
             case "KMLM": {
                 double val = Double.parseDouble(show_val);
                 val = my_native.kmToLandMile(val);
@@ -227,6 +232,7 @@ public class Worker extends AppCompatActivity {
                 break;
             }
 
+            // manual test successful
             case "KMSM": {
                 double val = Double.parseDouble(show_val);
                 val = my_native.kmToSeaMiles(val);
@@ -236,6 +242,7 @@ public class Worker extends AppCompatActivity {
                 break;
             }
 
+            // manual test successful
             case "SMKM": {
                 double val = Double.parseDouble(show_val);
                 val = my_native.seaMilestoKm(val);
@@ -245,6 +252,7 @@ public class Worker extends AppCompatActivity {
                 break;
             }
 
+            // manual test successful
             case "INCHSM": {
                 double val = Double.parseDouble(show_val);
                 val = my_native.inchToSm(val);
@@ -254,6 +262,7 @@ public class Worker extends AppCompatActivity {
                 break;
             }
 
+            // manual test successful
             case "SMINCH": {
                 double val = Double.parseDouble(show_val);
                 val = my_native.smToInch(val);
@@ -263,6 +272,7 @@ public class Worker extends AppCompatActivity {
                 break;
             }
 
+            // manual test successful
             case "FUTM": {
                 double val = Double.parseDouble(show_val);
                 val = my_native.ftToMeter(val);
@@ -272,6 +282,7 @@ public class Worker extends AppCompatActivity {
                 break;
             }
 
+            // manual test successful
             case "MFUT": {
                 double val = Double.parseDouble(show_val);
                 val = my_native.meterToFt(val);
@@ -281,6 +292,7 @@ public class Worker extends AppCompatActivity {
                 break;
             }
 
+            // manual test successful
             case "GALLITR": {
                 double val = Double.parseDouble(show_val);
                 val = my_native.gallToLitr(val);
@@ -290,6 +302,7 @@ public class Worker extends AppCompatActivity {
                 break;
             }
 
+            // manual test successful
             case "LITRGAL": {
                 double val = Double.parseDouble(show_val);
                 val = my_native.litrToGall(val);
@@ -299,6 +312,7 @@ public class Worker extends AppCompatActivity {
                 break;
             }
 
+            // manual test successful
             case "YARDM": {
                 double val = Double.parseDouble(show_val);
                 val = my_native.yardToMeter(val);
@@ -308,6 +322,7 @@ public class Worker extends AppCompatActivity {
                 break;
             }
 
+            // manual test successful
             case "MYARD": {
                 double val = Double.parseDouble(show_val);
                 val = my_native.meterToYard(val);

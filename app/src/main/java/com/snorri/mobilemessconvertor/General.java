@@ -13,7 +13,6 @@ public class General extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_general);
 
-        //Define onClick() method for each button
 
         //CELC->FAHR
         Button celc_to_fahr_button = findViewById(R.id.c_f_btn);
